@@ -1,10 +1,18 @@
 {
   "files": {
-    "main.css": "/bk-portfolio/static/css/main.3cd2206d.css",
-    "main.js": "/bk-portfolio/static/js/main.4626f129.js",
+    "main.css": "/bk-portfolio/static/css/main.9ce047df.css",
+    "main.js": "/bk-portfolio/static/js/main.1e85d457.js",
     "static/js/453.374be973.chunk.js": "/bk-portfolio/static/js/453.374be973.chunk.js",
+    "static/media/bharathi-hero.png": "/bk-portfolio/static/media/bharathi-hero.c20ac99f7e70d14ca7e8.png",
+    "static/media/araciyal-web.jpg": "/bk-portfolio/static/media/araciyal-web.f92a29387e529e0e9176.jpg",
+    "static/media/e-com.png": "/bk-portfolio/static/media/e-com.b29b91728f9f362f0045.png",
+    "static/media/pink-web.jpg": "/bk-portfolio/static/media/pink-web.8a13b206fc939df1058e.jpg",
+    "static/media/araciyal-admin.jpg": "/bk-portfolio/static/media/araciyal-admin.a582673b1ffe62703bcf.jpg",
+    "static/media/skanda.jpg": "/bk-portfolio/static/media/skanda.3dfdb15737de7c7f150e.jpg",
+    "static/media/rcjewelry.jpg": "/bk-portfolio/static/media/rcjewelry.93671abe2626cddd82dc.jpg",
     "static/media/js.png": "/bk-portfolio/static/media/js.1e95fec873ac924d248a.png",
-    "static/media/abstract-1.webp": "/bk-portfolio/static/media/abstract-1.7f68b5ecdb28b8fbccc6.webp",
+    "static/media/pink-admin.jpg": "/bk-portfolio/static/media/pink-admin.e68f39ba6bda15ed9103.jpg",
+    "static/media/kavalkaran.png": "/bk-portfolio/static/media/kavalkaran.d68fb416c30a02fce7c1.png",
     "static/media/bootstrap-icons.woff?": "/bk-portfolio/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/react.png": "/bk-portfolio/static/media/react.2000c881f41bb88c6100.png",
     "static/media/bootstrap-icons.woff2?": "/bk-portfolio/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
@@ -15,12 +23,12 @@
     "static/media/gitup.png": "/bk-portfolio/static/media/gitup.100dfb8f3f8389eac47e.png",
     "static/media/angular.jpeg": "/bk-portfolio/static/media/angular.6644ba18ff37ba9b0904.jpeg",
     "index.html": "/bk-portfolio/index.html",
-    "main.3cd2206d.css.map": "/bk-portfolio/static/css/main.3cd2206d.css.map",
-    "main.4626f129.js.map": "/bk-portfolio/static/js/main.4626f129.js.map",
+    "main.9ce047df.css.map": "/bk-portfolio/static/css/main.9ce047df.css.map",
+    "main.1e85d457.js.map": "/bk-portfolio/static/js/main.1e85d457.js.map",
     "453.374be973.chunk.js.map": "/bk-portfolio/static/js/453.374be973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cd2206d.css",
-    "static/js/main.4626f129.js"
+    "static/css/main.9ce047df.css",
+    "static/js/main.1e85d457.js"
   ]
 }
