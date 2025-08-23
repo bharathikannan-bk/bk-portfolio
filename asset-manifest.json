@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bk-portfolio/static/css/main.9ce047df.css",
-    "main.js": "/bk-portfolio/static/js/main.1e85d457.js",
+    "main.css": "/bk-portfolio/static/css/main.47d50973.css",
+    "main.js": "/bk-portfolio/static/js/main.3e9e8c59.js",
     "static/js/453.374be973.chunk.js": "/bk-portfolio/static/js/453.374be973.chunk.js",
     "static/media/bharathi-hero.png": "/bk-portfolio/static/media/bharathi-hero.c20ac99f7e70d14ca7e8.png",
     "static/media/araciyal-web.jpg": "/bk-portfolio/static/media/araciyal-web.f92a29387e529e0e9176.jpg",
@@ -23,12 +23,12 @@
     "static/media/gitup.png": "/bk-portfolio/static/media/gitup.100dfb8f3f8389eac47e.png",
     "static/media/angular.jpeg": "/bk-portfolio/static/media/angular.6644ba18ff37ba9b0904.jpeg",
     "index.html": "/bk-portfolio/index.html",
-    "main.9ce047df.css.map": "/bk-portfolio/static/css/main.9ce047df.css.map",
-    "main.1e85d457.js.map": "/bk-portfolio/static/js/main.1e85d457.js.map",
+    "main.47d50973.css.map": "/bk-portfolio/static/css/main.47d50973.css.map",
+    "main.3e9e8c59.js.map": "/bk-portfolio/static/js/main.3e9e8c59.js.map",
     "453.374be973.chunk.js.map": "/bk-portfolio/static/js/453.374be973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ce047df.css",
-    "static/js/main.1e85d457.js"
+    "static/css/main.47d50973.css",
+    "static/js/main.3e9e8c59.js"
   ]
 }
