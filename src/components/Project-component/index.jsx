@@ -1,310 +1,203 @@
-import React from "react";
+import SkandaFincorp from "../../assets/images/projects/skanda.jpg";
+import AraciyalWeb from "../../assets/images/projects/araciyal-web.jpg";
+import AraciyalAdmin from "../../assets/images/projects/araciyal-admin.jpg";
+import PinkWeb from "../../assets/images/projects/pink-web.jpg";
+import PinkAdmin from "../../assets/images/projects/pink-admin.jpg";
+import Rcjewelry from "../../assets/images/projects/rcjewelry.jpg";
+import Ecommerce from "../../assets/images/projects/e-com.png";
+import Kavalkaran from "../../assets/images/projects/kavalkaran.png";
+import { useState } from "react";
+
+const portfolioData = [
+  {
+    img: SkandaFincorp,
+    category: "Web Design",
+    filter: "filter-ui",
+    title: "Skanda Fincorp - Finance website",
+    description: "lorem100",
+  },
+  {
+    img: AraciyalWeb,
+    category: "Web Design",
+    filter: "filter-ui",
+    title: "Araciyal.com - Website",
+    description: "lorem100",
+  },
+  {
+    img: AraciyalAdmin,
+    category: "Web Application",
+    filter: "filter-development",
+    title: "Araciyal.com - Admin Panel",
+    description: "lorem100",
+  },
+  {
+    img: PinkWeb,
+    category: "Web Design",
+    filter: "filter-ui",
+    title: "Pink-celebrity - Website",
+    description: "lorem100",
+  },
+  {
+    img: PinkAdmin,
+    category: "Web Application",
+    filter: "filter-development",
+    title: "Pink Celebrity - Admin Panel",
+    description: "lorem100",
+  },
+  {
+    img: Rcjewelry,
+    category: "Landing Page",
+    filter: "filter-photography",
+    title: "RcJewelry - Website",
+    description: "lorem100",
+  },
+];
 
 function ProjectExperience() {
+  const [activeFilter, setActiveFilter] = useState("*");
+  const [loading, setLoading] = useState(false);
+
   return (
     <>
-        <section id="project" class="portfolio section">
-          <div class="container section-title text-start" data-aos="fade-up">
-            <h2>Projects</h2>
-            <div>
-              <span>Check My</span>{" "}
-              <span class="description-title">Projects</span>
-            </div>
+      <section id="project" class="container portfolio section">
+        <div class="container section-title text-start" data-aos="fade-up">
+          <h2>Projects</h2>
+          <div>
+            <span>Check My</span>{" "}
+            <span class="description-title">Projects</span>
           </div>
+        </div>
 
-          <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-            <div
-              class="isotope-layout"
-              data-default-filter="*"
-              data-layout="masonry"
-              data-sort="original-order"
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
-              <ul
-                class="portfolio-filters isotope-filters"
-                data-aos="fade-up"
-                data-aos-delay="200"
+              <li
+                className={activeFilter === "*" ? "filter-active" : ""}
+                // onClick={() => setActiveFilter("*")}
+                onClick={() => {
+                  setLoading(true);
+                  setTimeout(() => {
+                    setActiveFilter("*");
+                    setLoading(false);
+                  }, 1000);
+                }}
               >
-                <li data-filter="*" class="filter-active">
-                  <i class="bi bi-grid-3x3"></i> All Projects
-                </li>
-                <li data-filter=".filter-ui">
-                  <i class="bi bi-phone"></i> UI/UX
-                </li>
-                <li data-filter=".filter-development">
-                  <i class="bi bi-code-slash"></i> Development
-                </li>
-                <li data-filter=".filter-photography">
-                  <i class="bi bi-camera"></i> Photography
-                </li>
-                <li data-filter=".filter-marketing">
-                  <i class="bi bi-graph-up"></i> Marketing
-                </li>
-              </ul>
-
-              <div
-                class="row g-4 isotope-container"
-                data-aos="fade-up"
-                data-aos-delay="300"
+                <i class="bi bi-grid-3x3"></i> All Projects
+              </li>
+              <li
+                className={activeFilter === "filter-ui" ? "filter-active" : ""}
+                // onClick={() => setActiveFilter("filter-ui")}
+                onClick={() => {
+                  setLoading(true);
+                  setTimeout(() => {
+                    setActiveFilter("filter-ui");
+                    setLoading(false);
+                  }, 1000);
+                }}
               >
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-1.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">UI/UX Design</div>
-                          <h3 class="entry-title">Mobile Banking App</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-1.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-ui"
-                              data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
+                <i class="bi bi-laptop"></i> Web Design
+              </li>
+              <li
+                className={
+                  activeFilter === "filter-development" ? "filter-active" : ""
+                }
+                // onClick={() => setActiveFilter("filter-development")}
+                onClick={() => {
+                  setLoading(true);
+                  setTimeout(() => {
+                    setActiveFilter("filter-development");
+                    setLoading(false);
+                  }, 1000);
+                }}
+              >
+                <i class="bi bi-code-slash"></i> Web Apllications
+              </li>
+              <li
+                className={
+                  activeFilter === "filter-photography" ? "filter-active" : ""
+                }
+                // onClick={() => setActiveFilter("filter-photography")}
+                onClick={() => {
+                  setLoading(true);
+                  setTimeout(() => {
+                    setActiveFilter("filter-photography");
+                    setLoading(false);
+                  }, 1000);
+                }}
+              >
+                <i class="bi bi-camera"></i> Landing Pages
+              </li>
+            </ul>
 
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-10.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">Development</div>
-                          <h3 class="entry-title">E-Learning Platform</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-10.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-development"
-                              data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              {loading ? (
+                 <>
+                 <div className="text-center">
+                  <span class="loader"></span>
+                 </div>
+                 </>
+              ) : (
+                portfolioData
+                  .filter(
+                    (item) =>
+                      activeFilter === "*" || item.filter === activeFilter
+                  )
+                  .map((value, index) => (
+                    <div
+                      class={`col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui ${value.filter}`}
+                      key={index}
+                      data-aos="fade-up"
+                    >
+                      <article class="portfolio-entry">
+                        <figure class="entry-image">
+                          <img
+                            src={value.img}
+                            class="img-fluid"
+                            alt=""
+                            loading="lazy"
+                          />
+                          <div class="entry-overlay">
+                            <div class="overlay-content text-start">
+                              <div class="entry-meta">{value.category}</div>
+                              <h3 class="entry-title">{value.title}</h3>
+                              <div class="entry-links">
+                                <a
+                                  href={value.img}
+                                  target="_blank"
+                                  class="glightbox"
+                                  data-gallery="portfolio-gallery-ui"
+                                  data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+                                >
+                                  <i class="bi bi-arrows-angle-expand"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                  <i class="bi bi-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-7.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">Photography</div>
-                          <h3 class="entry-title">Urban Architecture</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-7.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-photography"
-                              data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-4.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">Marketing</div>
-                          <h3 class="entry-title">Social Media Campaign</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-4.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-marketing"
-                              data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-2.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">UI/UX Design</div>
-                          <h3 class="entry-title">Smart Home Interface</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-2.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-ui"
-                              data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-11.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">Development</div>
-                          <h3 class="entry-title">Cloud Management System</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-11.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-development"
-                              data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-8.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">Photography</div>
-                          <h3 class="entry-title">Nature Collection</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-8.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-photography"
-                              data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-                  <article class="portfolio-entry">
-                    <figure class="entry-image">
-                      <img
-                        src="assets/img/portfolio/portfolio-5.webp"
-                        class="img-fluid"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <div class="entry-overlay">
-                        <div class="overlay-content">
-                          <div class="entry-meta">Marketing</div>
-                          <h3 class="entry-title">Brand Strategy</h3>
-                          <div class="entry-links">
-                            <a
-                              href="assets/img/portfolio/portfolio-5.webp"
-                              class="glightbox"
-                              data-gallery="portfolio-gallery-marketing"
-                              data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum."
-                            >
-                              <i class="bi bi-arrows-angle-expand"></i>
-                            </a>
-                            <a href="portfolio-details.html">
-                              <i class="bi bi-arrow-right"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </figure>
-                  </article>
-                </div>
-              </div>
+                        </figure>
+                      </article>
+                    </div>
+                  ))
+              )}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </>
   );
 }

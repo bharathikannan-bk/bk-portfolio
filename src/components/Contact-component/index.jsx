@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 function ContactComponent() {
   return (
@@ -12,15 +13,20 @@ function ContactComponent() {
         </div>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 mb-5">
+          <div class="row gy-4 mb-5 text-start">
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div class="contact-info-box">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="info-content">
-                  <h4>Our Address</h4>
-                  <p>1842 Maple Avenue, Portland, Oregon 97204</p>
+                  <h4>Current Living Address</h4>
+                  <p>
+                    No 407, <br />
+                    1st Cross Street, EVR Street, <br />
+                    Singarathottam Vandalur, <br />
+                    Chennai, Tamilandu- 600 048
+                  </p>
                 </div>
               </div>
             </div>
@@ -32,8 +38,19 @@ function ContactComponent() {
                 </div>
                 <div class="info-content">
                   <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <p className="contact-no-direct">
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=bharathikannan1782@gmail.com"
+                      target="_blank"
+                    >
+                      bharathikannan1782@gmail.com
+                    </a>
+                  </p>
+                  <h4>Contact No</h4>
+                  <p className="contact-no-direct">
+                    <a href="tel:+916384626418">+91 6384626418</a>
+                  </p>
+                  {/* <p>contact@example.com</p> */}
                 </div>
               </div>
             </div>
@@ -44,16 +61,20 @@ function ContactComponent() {
                   <i class="bi bi-headset"></i>
                 </div>
                 <div class="info-content">
-                  <h4>Hours of Operation</h4>
-                  <p>Sunday-Fri: 9 AM - 6 PM</p>
-                  <p>Saturday: 9 AM - 4 PM</p>
+                  <h4>Our Address</h4>
+                  <p>
+                    No 2/54, <br />
+                    Pirandai kulam, Melakodumalor (po), <br />
+                    Paramakudi, Ramanatha puram, <br />
+                    Tamilnadu - 623 601
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+        {/* <div class="map-section" data-aos="fade-up" data-aos-delay="200" id="getintouch">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
             width="100%"
@@ -159,7 +180,7 @@ function ContactComponent() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

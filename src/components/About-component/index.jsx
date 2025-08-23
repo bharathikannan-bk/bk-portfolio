@@ -1,10 +1,9 @@
-import FirstImage from "../../assets/images/abstract-1.webp";
+import { Link } from "react-router-dom";
+import FirstImage from "../../assets/images/bharathi-hero.png";
 
 function AboutComponent() {
   return (
     <>
-      {/* <DefaultLayout> */}
-
       <section id="about" class="hero section">
         <div class="container">
           <div class="row">
@@ -35,11 +34,16 @@ function AboutComponent() {
                   </p>
                 </div>
 
-                <div class="cta-button">
-                  <a href="#services" class="btn">
+                <div className="cta-button">
+                  <Link
+                    href="../../assets/images/bharathikannan.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                  >
                     <span>VIEW RESUME</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -54,12 +58,12 @@ function AboutComponent() {
                   />
                 </div>
 
-                <div class="stats-card">
+                <div class="stats-card text-start">
                   <div class="stats-number">
-                    <h2>5K</h2>
+                    <h2>1.5+</h2>
                   </div>
                   <div class="stats-label">
-                    <p>Successful Campaigns</p>
+                    <p>Years Experience</p>
                   </div>
                   <div class="stats-arrow">
                     <a href="#portfolio">
@@ -72,7 +76,6 @@ function AboutComponent() {
           </div>
         </div>
       </section>
-      {/* </DefaultLayout> */}
     </>
   );
 }

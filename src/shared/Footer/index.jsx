@@ -1,13 +1,12 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 
 function Footer() {
   return (
-   <>
-  <footer id="footer" class="footer mt-5">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
+    <>
+      <footer id="footer" class="footer mt-5">
+        <div class="container footer-top">
+          {/* <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Strategy</span>
@@ -52,19 +51,33 @@ function Footer() {
           <p><strong>Email:</strong> <span>info@example.com</span></p>
         </div>
 
-      </div>
-    </div>
+      </div> */}
+          <div class="social-links d-flex justify-content-center mt-4 mb-3">
+            {/* <a href="">
+              <i class="bi bi-twitter-x"></i>
+            </a> */}
+            <a href="">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          <p>© {new Date().getFullYear()}, All Rights Reserved.</p>
+        </div>
 
-    <div class="container copyright text-center mt-4">
+        {/* <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Strategy</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
-    </div>
-
-  </footer>
-   </>
-  )
+    </div> */}
+      </footer>
+    </>
+  );
 }
 
 export default Footer;

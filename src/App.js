@@ -30,16 +30,18 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter> */}
-      <DefaultLayout>
-        {/* <Home_Component /> */}
-        <AboutComponent />
-        <ExperienceComponent />
-        <SkillsComponent />
-        <ProjectExperience />
-        <EducationComponent />
-        <ContactComponent />
-      </DefaultLayout>
-      <Footer />
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <DefaultLayout>
+          {/* <Home_Component /> */}
+          <AboutComponent />
+          <ExperienceComponent />
+          <SkillsComponent />
+          <ProjectExperience />
+          <EducationComponent />
+          <ContactComponent />
+        </DefaultLayout>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
