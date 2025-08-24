@@ -7,9 +7,11 @@ import Rcjewelry from "../../assets/images/projects/rcjewelry.jpg";
 import Ecommerce from "../../assets/images/projects/e-com.png";
 import Kavalkaran from "../../assets/images/projects/kavalkaran.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const portfolioData = [
+export const portfolioData = [
   {
+    id: 1,
     img: SkandaFincorp,
     category: "Web Design",
     filter: "filter-ui",
@@ -17,13 +19,34 @@ const portfolioData = [
     description: "lorem100",
   },
   {
+    id: 2,
     img: AraciyalWeb,
     category: "Web Design",
     filter: "filter-ui",
     title: "Araciyal.com - Website",
     description: "lorem100",
+    livelink: "araciyal.com",
+    date:"August 2025",
+    company:"Hermon Solutions",
+    platform: [
+      { id: 1, language: "Html" },
+      { id: 2, language: "Css" },
+      { id: 3, language: "Boostrap" },
+      { id: 4, language: "Javascript" },
+      { id: 5, language: "React.js" },
+    ],
+    overview:"lorem50",
+    challege:"lorem60",
+    solution:"lorem30",
+    galleryimages:[
+      {id:1,path:AraciyalWeb},
+      {id:2,path:AraciyalWeb},
+      {id:3,path:AraciyalWeb},
+      {id:4,path:AraciyalWeb},
+    ]
   },
   {
+    id: 3,
     img: AraciyalAdmin,
     category: "Web Application",
     filter: "filter-development",
@@ -31,6 +54,7 @@ const portfolioData = [
     description: "lorem100",
   },
   {
+    id: 4,
     img: PinkWeb,
     category: "Web Design",
     filter: "filter-ui",
@@ -38,6 +62,7 @@ const portfolioData = [
     description: "lorem100",
   },
   {
+    id: 5,
     img: PinkAdmin,
     category: "Web Application",
     filter: "filter-development",
@@ -45,6 +70,7 @@ const portfolioData = [
     description: "lorem100",
   },
   {
+    id: 6,
     img: Rcjewelry,
     category: "Landing Page",
     filter: "filter-photography",
@@ -144,11 +170,12 @@ function ProjectExperience() {
               data-aos-delay="300"
             >
               {loading ? (
-                 <>
-                 <div className="text-center">
-                  <span class="loader"></span>
-                 </div>
-                 </>
+                <>
+                  <div className="text-center">
+                    <span class="loader"></span>
+                    <p>Just a sec...</p>
+                  </div>
+                </>
               ) : (
                 portfolioData
                   .filter(
@@ -183,9 +210,9 @@ function ProjectExperience() {
                                 >
                                   <i class="bi bi-arrows-angle-expand"></i>
                                 </a>
-                                <a href="portfolio-details.html">
+                                <Link to={`/project-details/${value.id}`}>
                                   <i class="bi bi-arrow-right"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>

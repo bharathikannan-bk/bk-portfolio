@@ -6,6 +6,7 @@ import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import "./assets/vendor/aos/aos.css";
 import "./assets/vendor/glightbox/css/glightbox.min.css";
 import "./assets/css/main.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -18,6 +19,7 @@ import SkillsComponent from "./components/Skills-component";
 import ProjectExperience from "./components/Project-component";
 import EducationComponent from "./components/Education-component";
 import ContactComponent from "./components/Contact-component";
+import ProjectDetails from "./components/Project-component/details";
 
 function App() {
   useEffect(() => {
@@ -32,13 +34,23 @@ function App() {
       </BrowserRouter> */}
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <DefaultLayout>
-          {/* <Home_Component /> */}
-          <AboutComponent />
-          <ExperienceComponent />
-          <SkillsComponent />
-          <ProjectExperience />
-          <EducationComponent />
-          <ContactComponent />
+          <Routes>
+            {/* <Home_Component /> */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <AboutComponent />
+                  <ExperienceComponent />
+                  <SkillsComponent />
+                  <ProjectExperience />
+                  <EducationComponent />
+                  <ContactComponent />
+                </>
+              }
+            />
+            <Route path="/project-details/:id" element={<ProjectDetails />} />
+          </Routes>
         </DefaultLayout>
         <Footer />
       </BrowserRouter>

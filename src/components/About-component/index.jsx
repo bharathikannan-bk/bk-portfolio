@@ -35,15 +35,15 @@ function AboutComponent() {
                 </div>
 
                 <div className="cta-button">
-                  <Link
-                    href="../../assets/images/bharathikannan.jpg"
+                  <a
+                    href="/bharathikannan.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn"
                   >
                     <span>VIEW RESUME</span>
                     <i className="bi bi-arrow-right"></i>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

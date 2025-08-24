@@ -9,13 +9,36 @@ function DefaultLayout(props) {
     window.scrollTo(0, 0);
   }, []);
 
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div>
       <main class="main">
         <TopNav />
         <div>{props.children}</div>
       </main>
-      {/* <Footer /> */}
+      {showButton && (
+        <button
+          onClick={scrollToTop}
+          className="btn back-to-top-btn position-fixed"
+          title="Go to top"
+        >
+          <i className="bi bi-arrow-up"></i>
+        </button>
+      )}
     </div>
   );
 }

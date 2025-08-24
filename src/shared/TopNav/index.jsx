@@ -38,7 +38,7 @@ function TopNav() {
             class="logo d-flex align-items-center me-auto me-xl-0"
           >
             {/* <!-- <img src="assets/img/logo.webp" alt=""> --> */}
-            <h1 class="sitename">Bk</h1>
+            <h1 class="sitename">BkFolio</h1>
           </a>
 
           <nav id="navmenu" class="navmenu">

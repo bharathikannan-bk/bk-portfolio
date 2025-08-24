@@ -7,6 +7,9 @@ import reactImage from "../../assets/images/skills/react.png";
 import angularImage from "../../assets/images/skills/angular.jpeg";
 import gitImage from "../../assets/images/skills/git.png";
 import gitupImage from "../../assets/images/skills/gitup.png";
+import vscodeImage from "../../assets/images/skills/vscode.png";
+import postmanImage from "../../assets/images/skills/postman.webp";
+import swaggerImage from "../../assets/images/skills/swagger.png";
 
 function SkillsComponent() {
   return (
@@ -107,6 +110,36 @@ function SkillsComponent() {
                         className="skills-logo-img"
                       />{" "}
                      Git up
+                    </p>
+                  </div>
+                   <div className="col-md-4">
+                    <p className="skills-logo-text">
+                      <img
+                        src={vscodeImage}
+                        alt="html"
+                        className="skills-logo-img"
+                      />{" "}
+                     Vs code
+                    </p>
+                  </div>
+                   <div className="col-md-4">
+                    <p className="skills-logo-text">
+                      <img
+                        src={postmanImage}
+                        alt="html"
+                        className="skills-logo-img"
+                      />{" "}
+                     Post man
+                    </p>
+                  </div>
+                   <div className="col-md-4">
+                    <p className="skills-logo-text">
+                      <img
+                        src={swaggerImage}
+                        alt="html"
+                        className="skills-logo-img"
+                      />{" "}
+                     Swagger
                     </p>
                   </div>
                 </div>
