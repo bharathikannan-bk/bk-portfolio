@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bk-portfolio/static/css/main.7aea6a1d.css",
-    "main.js": "/bk-portfolio/static/js/main.d8533dda.js",
+    "main.js": "/bk-portfolio/static/js/main.b7ccc411.js",
     "static/js/453.374be973.chunk.js": "/bk-portfolio/static/js/453.374be973.chunk.js",
     "static/media/bharathi-hero.png": "/bk-portfolio/static/media/bharathi-hero.c20ac99f7e70d14ca7e8.png",
     "static/media/araciyal-web.jpg": "/bk-portfolio/static/media/araciyal-web.f92a29387e529e0e9176.jpg",
@@ -27,11 +27,11 @@
     "static/media/postman.webp": "/bk-portfolio/static/media/postman.f875d5ad81786b7b9e04.webp",
     "index.html": "/bk-portfolio/index.html",
     "main.7aea6a1d.css.map": "/bk-portfolio/static/css/main.7aea6a1d.css.map",
-    "main.d8533dda.js.map": "/bk-portfolio/static/js/main.d8533dda.js.map",
+    "main.b7ccc411.js.map": "/bk-portfolio/static/js/main.b7ccc411.js.map",
     "453.374be973.chunk.js.map": "/bk-portfolio/static/js/453.374be973.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aea6a1d.css",
-    "static/js/main.d8533dda.js"
+    "static/js/main.b7ccc411.js"
   ]
 }
