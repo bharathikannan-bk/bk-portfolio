@@ -36,7 +36,7 @@ function AboutComponent() {
 
                 <div className="cta-button">
                   <a
-                    href="/bharathikannan.pdf"
+                    href="https://drive.google.com/file/d/1y_gLOhjKDLSFQ-NNuvz7nFYBqPpTaT-G/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn"
