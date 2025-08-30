@@ -5,3 +5,14 @@
 .hermon-color{
     color: #8bc43f;
 }
+
+.expr-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .expr-flex{
+        font-size: 12px;
+    }
+}

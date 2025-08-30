@@ -83,8 +83,8 @@ function ExperienceComponent() {
                       className="testimonial-item"
                       style={{ textAlign: "justify" }}
                     >
-                      <div className="d-flex justify-content-between">
-                        <h5>🔹React Developer</h5>
+                      <div className="expr-flex mb-2">
+                        <h5>React Developer</h5>
                         <span className="dot-icon-ex">
                           <i className="bi bi-calendar-check"></i> Jan 06,2025 -
                           Present
@@ -132,8 +132,8 @@ function ExperienceComponent() {
                       className="testimonial-item"
                       style={{ textAlign: "justify" }}
                     >
-                      <div className="d-flex justify-content-between">
-                        <h5>🔹 Internship</h5>
+                      <div className="expr-flex mb-2">
+                        <h5>Internship</h5>
                         <span className="dot-icon-ex">
                           <i className="bi bi-calendar-check"></i> July 03,2024
                           - Dec 30,2024

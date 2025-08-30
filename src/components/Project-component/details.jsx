@@ -22,11 +22,15 @@ function ProjectDetails() {
 
     const lightbox = GLightbox({
       selector: ".glightbox",
+      touchNavigation: true,
+      loop: true,
+      closeButton: true,
+      arrows: true,
     });
 
-     const timer = setTimeout(() => {
-    setLoading(false);
-  }, 1000);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
 
     return () => {
       lightbox.destroy();
@@ -49,7 +53,7 @@ function ProjectDetails() {
           <nav className="breadcrumbs">
             <ol>
               <li>
-                <Link to={'/bk-portfolio'}>Home</Link>
+                <Link to={"/bk-portfolio"}>Home</Link>
               </li>
               <li className="current">Portfolio Details</li>
             </ol>
@@ -125,7 +129,11 @@ function ProjectDetails() {
                       <div className="row g-2 mt-3">
                         {project.galleryimages.map((img, index) => (
                           <div className="col-3" key={index}>
-                            <a href={img.path} className="glightbox">
+                            <a
+                              href={img.path}
+                              className="glightbox"
+                              target="_blank"
+                            >
                               <img
                                 src={img.path}
                                 alt="Gallery Image"
@@ -150,6 +158,45 @@ function ProjectDetails() {
                         ))}
                       </>
                     )}
+                  </div>
+
+                  <div className="portfolio-details mt-5">
+                    <div className="portfolio-details-content">
+                      <div
+                        className="cta-buttons"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                      >
+                        {project.livelink === "Not Yet" ? (
+                          <Link
+                            // to={`${project.livelink}`}
+                            // target="_blank"
+                           style={{
+                            padding:"12px 28px",
+                            backgroundColor:"gray",
+                            color:"white",
+                            borderRadius:"30px",
+                            fontWeight:"500",
+                            transition: "all 0.3s ease"
+                           }}
+                          >
+                             <i class="bi bi-ban"></i> Not Live Project
+                          </Link>
+                        ) : (
+                          <Link
+                            to={`${project.livelink}`}
+                            target="_blank"
+                            className="btn-view-project"
+                          >
+                            View Live Project
+                          </Link>
+                        )}
+
+                        <a href="#" className="btn-next-project">
+                          View Source <i className="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,7 +230,10 @@ function ProjectDetails() {
 
                   <div className="project-overview">
                     <p className="lead" style={{ textAlign: "justify" }}>
-                      {project.description}
+                      {project.description1}
+                    </p>
+                    <p className="lead" style={{ textAlign: "justify" }}>
+                      {project.description2}
                     </p>
 
                     <div
@@ -332,19 +382,6 @@ function ProjectDetails() {
                     </div>
                   </div>
                 </div> */}
-
-                  <div
-                    className="cta-buttons"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <a href="" className="btn-view-project">
-                      View Live Project
-                    </a>
-                    <a href="#" className="btn-next-project">
-                      Next Project <i className="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
