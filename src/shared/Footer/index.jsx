@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -56,15 +57,15 @@ function Footer() {
             {/* <a href="">
               <i class="bi bi-twitter-x"></i>
             </a> */}
-            <a href="">
+            <Link to={'https://www.facebook.com/share/1FKGBYvRm7/'} target="_blank">
               <i class="bi bi-facebook"></i>
-            </a>
-            <a href="">
+            </Link>
+            <Link to={'https://www.instagram.com/kannan_bharathi__?utm_source=qr&igsh=YWtvYW5peHdycHI2'} target="_blank">
               <i class="bi bi-instagram"></i>
-            </a>
-            <a href="">
+            </Link>
+            <Link to={'https://www.linkedin.com/in/bharathi-kannan-1939632ab'} target="_blank">
               <i class="bi bi-linkedin"></i>
-            </a>
+            </Link>
           </div>
           <p>© {new Date().getFullYear()}, All Rights Reserved.</p>
         </div>

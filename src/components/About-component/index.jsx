@@ -10,7 +10,7 @@ function AboutComponent() {
             <div class="col-lg-7 content-col text-start" data-aos="fade-up">
               <div class="content">
                 <div class="agency-name">
-                  <h5>FROND-END DEVELOPER</h5>
+                  <h5>FRONT-END DEVELOPER</h5>
                 </div>
 
                 <div class="main-heading">

@@ -129,17 +129,13 @@ function ProjectDetails() {
                       <div className="row g-2 mt-3">
                         {project.galleryimages.map((img, index) => (
                           <div className="col-3" key={index}>
-                            <a
-                              href={img.path}
-                              className="glightbox"
-                              target="_blank"
-                            >
-                              <img
-                                src={img.path}
-                                alt="Gallery Image"
-                                className="img-fluid"
-                              />
-                            </a>
+                            <img
+                              src={img.path}
+                              alt={`Gallery ${index}`}
+                              className="img-fluid"
+                              data-bs-toggle="modal"
+                              data-bs-target="#galleryModal"
+                            />
                           </div>
                         ))}
                       </div>
@@ -199,6 +195,15 @@ function ProjectDetails() {
                         >
                           View Source <i className="bi bi-arrow-right"></i>
                         </Link>
+                      </div>
+                    </div>
+                    <div className="text-start mt-3 fw-bold d-flex gap-2">
+                      <div>⚠️</div>
+                      <div>
+                        <span className="text-danger">
+                          This project belongs to Hermon Solutions. Viewing or
+                          copying source code is strictly prohibited.
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -386,6 +391,87 @@ function ProjectDetails() {
                     </div>
                   </div>
                 </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Modal */}
+          <div
+            className="modal fade"
+            id="galleryModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-lg modal-dialog-centered">
+              <div className="modal-content bg-white">
+                <div className="modal-header">
+                  <h5 className="modal-title text-dark" id="galleryModalLabel">
+                    Gallery Images
+                  </h5>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  <div
+                    id="carouselGallery"
+                    className="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div className="carousel-inner">
+                      {project.galleryimages.map((img, index) => (
+                        <div
+                          className={`carousel-item ${
+                            index === 0 ? "active" : ""
+                          }`}
+                          key={index}
+                        >
+                          <img
+                            src={img.path}
+                            className="d-block w-100"
+                            alt={`Gallery ${index}`}
+                          />
+                        </div>
+                      ))}
+                    </div>
+
+                    <button
+                      className="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselGallery"
+                      data-bs-slide="prev"
+                    >
+                      <i
+                        class="bi bi-chevron-left"
+                        style={{
+                          color: "black",
+                          fontSize: "20px",
+                          border: "3px solid black",
+                        }}
+                      ></i>
+                    </button>
+                    <button
+                      className="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselGallery"
+                      data-bs-slide="next"
+                    >
+                      <i
+                        class="bi bi-chevron-right"
+                        style={{
+                          color: "black",
+                          fontSize: "20px",
+                          border: "3px solid black",
+                        }}
+                      ></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

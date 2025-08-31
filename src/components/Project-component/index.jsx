@@ -87,6 +87,14 @@ import Ruposhi4 from "../../assets/images/details/ruposhi-4.png";
 import Ruposhi5 from "../../assets/images/details/ruposhi-5.png";
 import Ruposhi6 from "../../assets/images/details/ruposhi-6.png";
 
+import Psk from "../../assets/images/details/psk-1.png";
+import Psk1 from "../../assets/images/details/psk-1.png";
+import Psk2 from "../../assets/images/details/psk-2.png";
+import Psk3 from "../../assets/images/details/psk-3.png";
+import Psk4 from "../../assets/images/details/psk-4.png";
+import Psk5 from "../../assets/images/details/psk-5.png";
+import Psk6 from "../../assets/images/details/psk-6.png";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -100,7 +108,7 @@ export const portfolioData = [
     description1:
       "Ruposhi is a technology-driven IT support and product sales company. The website serves as a hub for offering IT consultancy, technical support services, and also promotes Ruposhi’s own line of software and hardware products. Built with a clean landing page design, it highlights their services, product catalog, and customer success stories.",
     livelink: "https://ruposhi.sellingpartnerservices.com",
-    sourceFile:"https://github.com/bharathikannan-bk/ruposhi",
+    sourceFile: "https://github.com/bharathikannan-bk/ruposhi",
     date: "September 2025",
     company: "Hermon Solutions",
     platform: [
@@ -131,6 +139,7 @@ export const portfolioData = [
     category: "Web Application",
     filter: "filter-development",
     livelink: "https://admin.hermonsolutions.com",
+    sourceFile: "https://github.com/bharathikannan-bk/hs-admin",
     title: "Hermon Solutions - Admin Panel",
     date: "July 2024",
     company: "Hermon Solutions",
@@ -149,7 +158,7 @@ export const portfolioData = [
       { id: 2, language: "Css" },
       { id: 3, language: "Bootstrap" },
       { id: 4, language: "Javascript" },
-      { id: 5, language: "React.js" }
+      { id: 5, language: "React.js" },
     ],
     overview:
       "The Hermon Solutions Admin Panel is developed to give internal teams full control over content, services, and client interactions. It allows for efficient management of company offerings, ensuring the official website remains fresh, professional, and informative.",
@@ -164,6 +173,7 @@ export const portfolioData = [
     category: "Web Design",
     filter: "filter-ui",
     livelink: "http://new.hermonsolutions.com",
+    sourceFile: "https://github.com/bharathikannan-bk/hs-website",
     title: "Hermon Solutions - IT Company Website",
     date: "July 2025",
     company: "Hermon Solutions",
@@ -204,6 +214,7 @@ export const portfolioData = [
     description1:
       "RcJewelry is an elegant online jewelry platform designed to showcase and sell premium collections of ornaments. Customers can explore a wide range of jewelry including rings, necklaces, bangles, and custom designs. The website provides smooth navigation, high-quality product galleries, and secure ordering options, creating a luxurious digital shopping experience.",
     livelink: "https://betaapp.rcjewelry.com",
+    sourceFile: "https://github.com/bharathikannan-bk/rcjewelry",
     date: "June 2025",
     company: "Hermon Solutions",
     platform: [
@@ -237,6 +248,7 @@ export const portfolioData = [
     description1:
       "The Pink-Celebrity Admin Panel is a complete management system for handling celebrity profiles, advertisement campaigns, and healthcare content. It enables administrators and managers to control bookings, manage ads across different sections (home, news, video, sports, etc.), upload healthcare-related articles, and monitor platform performance.",
     livelink: "http://admin.pinkcelebrity.in",
+    sourceFile: "https://github.com/bharathikannan-bk/pink-admin",
     date: "April 2025",
     company: "Hermon Solutions",
     platform: [
@@ -268,6 +280,7 @@ export const portfolioData = [
     description1:
       "Pink-Celebrity is a modern digital platform built to showcase celebrity profiles, manage ad campaigns, and provide healthcare-related content for influencers and the entertainment industry. The website serves as a hub where users can explore celebrity news, book celebrities for events, and discover brand advertising opportunities. It also provides healthcare awareness resources tailored for celebrities and fans alike.",
     livelink: "https://pinkcelebrity.in",
+    sourceFile: "https://github.com/bharathikannan-bk/pink-website",
     date: "March 2025",
     company: "Hermon Solutions",
     platform: [
@@ -303,6 +316,7 @@ export const portfolioData = [
     description1:
       "The Araciyal.com admin panel is a robust news management system developed for editors, journalists, and administrators. It allows seamless creation, editing, scheduling, and publishing of news articles with full control over categories, tags, and multimedia uploads.",
     livelink: "https://admin.araciyal.com",
+    sourceFile: "https://github.com/bharathikannan-bk/araciyal-admin",
     date: "February 2025",
     company: "Hermon Solutions",
     platform: [
@@ -338,6 +352,7 @@ export const portfolioData = [
     description1:
       "Araciyal.com is a modern news portal designed to deliver real-time political, social, entertainment, sports, and world news to its readers. Built with React.js and a responsive design, the platform ensures smooth navigation, quick access to trending updates, and engaging news presentation with images, videos, and categories.",
     livelink: "https://araciyal.com",
+    sourceFile: "https://github.com/bharathikannan-bk/araciyal-website",
     date: "January 2025",
     company: "Hermon Solutions",
     platform: [
@@ -368,6 +383,7 @@ export const portfolioData = [
     category: "Web Design",
     filter: "filter-ui",
     livelink: "https://skandafincorp.com",
+    sourceFile: "https://github.com/bharathikannan-bk/skanda-fincorp",
     title: "Skanda Fincorp - Finance website",
     date: "December 2024",
     company: "Hermon Solutions",
@@ -406,6 +422,7 @@ export const portfolioData = [
     title: "Kaval karan - CCTV Service project",
     date: "November 2024",
     company: "Hermon Solutions",
+    sourceFile: "https://github.com/bharathikannan-bk/kavalkaran-cctv",
     description1:
       "Kaval Karan is a professional CCTV service platform designed to help customers explore, choose, and request surveillance solutions online. The website is built to provide users with detailed insights into CCTV installations, maintenance services, and modern security solutions. Developed with React.js and a responsive UI, the platform ensures reliability, speed, and trust for customers looking for security systems.",
     description2:
@@ -433,38 +450,39 @@ export const portfolioData = [
   },
   {
     id: 2,
-    img: SkandaFincorp,
+    img: Psk,
     category: "Web Design",
     filter: "filter-ui",
-    livelink: "https://skandafincorp.com",
+    livelink: "Not Yet",
+    sourceFile: "https://github.com/bharathikannan-bk/psk-foods-product",
     title: "Psk Foods & Products",
-    date: "october 2024",
+    date: "October 2024",
     company: "Hermon Solutions",
     description1:
-      "Skanda Fincorp is a modern finance-related web platform designed to provide users with easy access to loan services, investment guidance, and financial planning tools. The primary objective of this project is to build customer trust and simplify the process of exploring financial products online. The website is developed using React for frontend.",
+      "PSK Foods & Products is an in-house web platform created for showcasing and selling our own range of food products online. The primary goal of this project is to establish a strong digital presence for PSK Foods, enabling customers to explore product categories, learn about nutritional values, and place purchase inquiries with ease. Built using React for the frontend, the site focuses on simplicity, performance, and engaging presentation.",
     description2:
-      " Key features include an intuitive loan calculator, EMI planner, service listings, and a contact form for quick assistance. The platform is fully responsive, SEO-friendly, and optimized for user experience. By combining a professional design with secure architecture, Skanda Fincorp aims to enhance customer engagement and offer reliable financial solutions digitally.",
+      "Key features include a visually appealing product catalog, detailed product descriptions, categories for easy navigation, a responsive design, and a contact form for customer inquiries. The platform highlights product images, branding elements, and the unique qualities of PSK’s food items. The website is SEO-friendly, optimized for speed, and scalable for future integration of an e-commerce checkout system. With PSK Foods & Products, Hermon Solutions demonstrates expertise in building brand-focused digital storefronts that connect directly with consumers.",
     galleryimages: [
-      { id: 1, path: Skanda1 },
-      { id: 2, path: Skanda2 },
-      { id: 3, path: Skanda3 },
-      { id: 4, path: Skanda4 },
-      { id: 4, path: Skanda5 },
-      { id: 4, path: Skanda6 },
+      { id: 1, path: Psk1 },
+      { id: 2, path: Psk2 },
+      { id: 3, path: Psk3 },
+      { id: 4, path: Psk4 },
+      { id: 5, path: Psk5 },
+      { id: 6, path: Psk6 },
     ],
     platform: [
       { id: 1, language: "Html" },
       { id: 2, language: "Css" },
-      { id: 3, language: "Boostrap" },
+      { id: 3, language: "Bootstrap" },
       { id: 4, language: "Javascript" },
       { id: 5, language: "React.js" },
     ],
     overview:
-      "Skanda Fincorp is a finance-focused digital platform built to provide users with loan services, investment options, and financial planning tools in a seamless online experience.",
+      "PSK Foods & Products is a brand-focused website designed to digitally showcase and promote our in-house food products. It provides a simple, visually rich platform for presenting products and attracting customers online.",
     challege:
-      "The main challenges included handling complex financial data securely, ensuring fast performance, and building user trust through a transparent and professional interface.",
+      "The main challenges included creating a strong brand identity through the website, managing multiple product categories with clarity, and ensuring that the platform was engaging and responsive for all types of users.",
     solution:
-      "We implemented React.js, and responsive UI/UX to deliver a smooth customer journey. Advanced features like EMI calculators and service listings addressed customer needs effectively.",
+      "We designed a modern React-based frontend with an emphasis on product storytelling and visual appeal. By organizing products into categories, optimizing images, and ensuring responsiveness, we delivered a professional platform ready for future e-commerce integration.",
   },
   {
     id: 1,
@@ -472,6 +490,7 @@ export const portfolioData = [
     category: "Web Application",
     filter: "filter-development",
     livelink: "Not Yet",
+    sourceFile: "https://github.com/bharathikannan-bk/hermon-ecom",
     title: "Hermon E-commerce",
     date: "October 2024",
     company: "Hermon Solutions",
@@ -510,6 +529,16 @@ function ProjectExperience() {
   const [activeFilter, setActiveFilter] = useState("*");
   const [loading, setLoading] = useState(false);
 
+  const filteredProjects = portfolioData.filter((project) => {
+    if (activeFilter === "*") return true;
+
+    if (activeFilter === "filter-live") {
+      return project.livelink && project.livelink.toLowerCase() !== "not yet";
+    }
+
+    return project.filter === activeFilter;
+  });
+
   return (
     <>
       <section id="project" class="container portfolio section">
@@ -544,7 +573,7 @@ function ProjectExperience() {
                   }, 1000);
                 }}
               >
-                <i class="bi bi-grid-3x3-gap"></i>  All Projects
+                <i class="bi bi-grid-3x3-gap"></i> All Projects
               </li>
               <li
                 className={activeFilter === "filter-ui" ? "filter-active" : ""}
@@ -572,7 +601,7 @@ function ProjectExperience() {
                   }, 1000);
                 }}
               >
-                <i class="bi bi-code-slash"></i> Web Apllications
+                <i class="bi bi-code-slash"></i> Web Application
               </li>
               <li
                 className={
@@ -587,23 +616,22 @@ function ProjectExperience() {
                   }, 1000);
                 }}
               >
-                <i class="bi bi-layout-text-window"></i>  Landing Pages
+                <i class="bi bi-layout-text-window"></i> Landing Pages
               </li>
-              {/* <li
+              <li
                 className={
-                  activeFilter === "filter-photography" ? "filter-active" : ""
+                  activeFilter === "filter-live" ? "filter-active" : ""
                 }
-                // onClick={() => setActiveFilter("filter-photography")}
                 onClick={() => {
                   setLoading(true);
                   setTimeout(() => {
-                    setActiveFilter("filter-photography");
+                    setActiveFilter("filter-live");
                     setLoading(false);
                   }, 1000);
                 }}
               >
                 <i className="bi bi-lightning-charge"></i> Live Projects
-              </li> */}
+              </li>
             </ul>
 
             <div
@@ -620,10 +648,22 @@ function ProjectExperience() {
                 </>
               ) : (
                 portfolioData
-                  .filter(
-                    (item) =>
-                      activeFilter === "*" || item.filter === activeFilter
-                  )
+                  // .filter(
+                  //   (item) =>
+                  //     activeFilter === "*" || item.filter === activeFilter
+                  // )
+                  .filter((item) => {
+                    if (activeFilter === "*") return true;
+
+                    if (activeFilter === "filter-live") {
+                      return (
+                        item.livelink &&
+                        item.livelink.toLowerCase() !== "not yet"
+                      );
+                    }
+
+                    return item.filter === activeFilter;
+                  })
                   .map((value, index) => (
                     <div
                       class={`col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui ${value.filter}`}
