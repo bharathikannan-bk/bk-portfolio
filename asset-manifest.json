@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bk-portfolio/static/css/main.476f1a67.css",
-    "main.js": "/bk-portfolio/static/js/main.7ed250f0.js",
+    "main.js": "/bk-portfolio/static/js/main.31c4a174.js",
     "static/js/453.d059431b.chunk.js": "/bk-portfolio/static/js/453.d059431b.chunk.js",
     "static/media/pink-web-1.png": "/bk-portfolio/static/media/pink-web-1.c127e968c17a99901fad.png",
     "static/media/kavalkaran-3.png": "/bk-portfolio/static/media/kavalkaran-3.9eb8617c703c27369af5.png",
@@ -95,11 +95,11 @@
     "static/media/postman.webp": "/bk-portfolio/static/media/postman.f875d5ad81786b7b9e04.webp",
     "index.html": "/bk-portfolio/index.html",
     "main.476f1a67.css.map": "/bk-portfolio/static/css/main.476f1a67.css.map",
-    "main.7ed250f0.js.map": "/bk-portfolio/static/js/main.7ed250f0.js.map",
+    "main.31c4a174.js.map": "/bk-portfolio/static/js/main.31c4a174.js.map",
     "453.d059431b.chunk.js.map": "/bk-portfolio/static/js/453.d059431b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.476f1a67.css",
-    "static/js/main.7ed250f0.js"
+    "static/js/main.31c4a174.js"
   ]
 }
