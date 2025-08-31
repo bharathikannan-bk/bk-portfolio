@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/bk-portfolio/static/css/main.476f1a67.css",
-    "main.js": "/bk-portfolio/static/js/main.31c4a174.js",
+    "main.js": "/bk-portfolio/static/js/main.24cb3a20.js",
     "static/js/453.d059431b.chunk.js": "/bk-portfolio/static/js/453.d059431b.chunk.js",
     "static/media/pink-web-1.png": "/bk-portfolio/static/media/pink-web-1.c127e968c17a99901fad.png",
     "static/media/kavalkaran-3.png": "/bk-portfolio/static/media/kavalkaran-3.9eb8617c703c27369af5.png",
     "static/media/ruposhi-1.png": "/bk-portfolio/static/media/ruposhi-1.968c496957ca7e10c4d4.png",
+    "static/media/psk-1.png": "/bk-portfolio/static/media/psk-1.dc3723267fd3635f9fb6.png",
     "static/media/araciyal-web-3.png": "/bk-portfolio/static/media/araciyal-web-3.da962c5635816f1f56d0.png",
     "static/media/araciyal-web-1.png": "/bk-portfolio/static/media/araciyal-web-1.be7b4bd952a8fdc2cfc8.png",
+    "static/media/psk-2.png": "/bk-portfolio/static/media/psk-2.71902ff4da2515e5ec19.png",
     "static/media/pink-web-7.png": "/bk-portfolio/static/media/pink-web-7.bc96d0cb358cd53b6ff3.png",
     "static/media/hs-6.png": "/bk-portfolio/static/media/hs-6.7c5414b8b61407a365bf.png",
     "static/media/skanda-5.png": "/bk-portfolio/static/media/skanda-5.92d0156e228b98a4f2d7.png",
@@ -15,12 +17,14 @@
     "static/media/ruposhi-4.png": "/bk-portfolio/static/media/ruposhi-4.e53ec258cebe7dbebfca.png",
     "static/media/skanda-3.png": "/bk-portfolio/static/media/skanda-3.ea68ba6b256944493056.png",
     "static/media/bharathi-hero.png": "/bk-portfolio/static/media/bharathi-hero.c20ac99f7e70d14ca7e8.png",
+    "static/media/psk-6.png": "/bk-portfolio/static/media/psk-6.3326e9190b1d6917920d.png",
     "static/media/araciyal-web-2.png": "/bk-portfolio/static/media/araciyal-web-2.3fba40cd4ba78d4300bf.png",
     "static/media/araciyal-web-4.png": "/bk-portfolio/static/media/araciyal-web-4.edf1ad3e5e0f253d2a63.png",
     "static/media/araciyal-web.jpg": "/bk-portfolio/static/media/araciyal-web.f92a29387e529e0e9176.jpg",
     "static/media/pink-web-6.png": "/bk-portfolio/static/media/pink-web-6.86fb7a096a5c6f218159.png",
     "static/media/e-com.png": "/bk-portfolio/static/media/e-com.b29b91728f9f362f0045.png",
     "static/media/ecom-1.png": "/bk-portfolio/static/media/ecom-1.b29b91728f9f362f0045.png",
+    "static/media/psk-4.png": "/bk-portfolio/static/media/psk-4.103b65fdc6c6f9f147a8.png",
     "static/media/ruposhi.jpg": "/bk-portfolio/static/media/ruposhi.ffa42dd7070184a44672.jpg",
     "static/media/ruposhi-3.png": "/bk-portfolio/static/media/ruposhi-3.6ea52c4819a6102f36d8.png",
     "static/media/araciyal-admin-5.png": "/bk-portfolio/static/media/araciyal-admin-5.97b3140d9f4d086db987.png",
@@ -40,6 +44,7 @@
     "static/media/hs-5.png": "/bk-portfolio/static/media/hs-5.7da237aa6a36f56083a0.png",
     "static/media/hs-4.png": "/bk-portfolio/static/media/hs-4.7f6d68840557cf64cd1d.png",
     "static/media/pink-admin.jpg": "/bk-portfolio/static/media/pink-admin.e68f39ba6bda15ed9103.jpg",
+    "static/media/psk-3.png": "/bk-portfolio/static/media/psk-3.f0bc9ecfe5317cdbacfa.png",
     "static/media/ecom-3.png": "/bk-portfolio/static/media/ecom-3.4573b96e16f0a7e3efe7.png",
     "static/media/pink-web-2.png": "/bk-portfolio/static/media/pink-web-2.332af83daf86b7e7c3b8.png",
     "static/media/pink-web-3.png": "/bk-portfolio/static/media/pink-web-3.de41d1edf6f918f94122.png",
@@ -52,6 +57,7 @@
     "static/media/kavalkaran-4.png": "/bk-portfolio/static/media/kavalkaran-4.74b1a8ab497fb2ecdeb3.png",
     "static/media/araciyal-admin-4.png": "/bk-portfolio/static/media/araciyal-admin-4.2d9cf885cc7dd8c77c5a.png",
     "static/media/rcj-2.jpg": "/bk-portfolio/static/media/rcj-2.a0e70fa632889045a23a.jpg",
+    "static/media/psk-5.png": "/bk-portfolio/static/media/psk-5.d903d3c557cf06b62a25.png",
     "static/media/pink-web-8.png": "/bk-portfolio/static/media/pink-web-8.27b107be0d7b779ebe8f.png",
     "static/media/hs-2.png": "/bk-portfolio/static/media/hs-2.8b9a123396879da9bd33.png",
     "static/media/kavalkaran-1.png": "/bk-portfolio/static/media/kavalkaran-1.acad43275612fd736571.png",
@@ -95,11 +101,11 @@
     "static/media/postman.webp": "/bk-portfolio/static/media/postman.f875d5ad81786b7b9e04.webp",
     "index.html": "/bk-portfolio/index.html",
     "main.476f1a67.css.map": "/bk-portfolio/static/css/main.476f1a67.css.map",
-    "main.31c4a174.js.map": "/bk-portfolio/static/js/main.31c4a174.js.map",
+    "main.24cb3a20.js.map": "/bk-portfolio/static/js/main.24cb3a20.js.map",
     "453.d059431b.chunk.js.map": "/bk-portfolio/static/js/453.d059431b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.476f1a67.css",
-    "static/js/main.31c4a174.js"
+    "static/js/main.24cb3a20.js"
   ]
 }
