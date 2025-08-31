@@ -171,16 +171,16 @@ function ProjectDetails() {
                           <Link
                             // to={`${project.livelink}`}
                             // target="_blank"
-                           style={{
-                            padding:"12px 28px",
-                            backgroundColor:"gray",
-                            color:"white",
-                            borderRadius:"30px",
-                            fontWeight:"500",
-                            transition: "all 0.3s ease"
-                           }}
+                            style={{
+                              padding: "12px 28px",
+                              backgroundColor: "gray",
+                              color: "white",
+                              borderRadius: "30px",
+                              fontWeight: "500",
+                              transition: "all 0.3s ease",
+                            }}
                           >
-                             <i class="bi bi-ban"></i> Not Live Project
+                            <i class="bi bi-ban"></i> Not Live Project
                           </Link>
                         ) : (
                           <Link
@@ -192,9 +192,13 @@ function ProjectDetails() {
                           </Link>
                         )}
 
-                        <a href="#" className="btn-next-project">
+                        <Link
+                          to={`${project.sourceFile}`}
+                          className="btn-next-project"
+                          target="_blank"
+                        >
                           View Source <i className="bi bi-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

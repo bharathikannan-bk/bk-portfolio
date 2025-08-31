@@ -100,6 +100,7 @@ export const portfolioData = [
     description1:
       "Ruposhi is a technology-driven IT support and product sales company. The website serves as a hub for offering IT consultancy, technical support services, and also promotes Ruposhi’s own line of software and hardware products. Built with a clean landing page design, it highlights their services, product catalog, and customer success stories.",
     livelink: "https://ruposhi.sellingpartnerservices.com",
+    sourceFile:"https://github.com/bharathikannan-bk/ruposhi",
     date: "September 2025",
     company: "Hermon Solutions",
     platform: [
@@ -148,9 +149,7 @@ export const portfolioData = [
       { id: 2, language: "Css" },
       { id: 3, language: "Bootstrap" },
       { id: 4, language: "Javascript" },
-      { id: 5, language: "React.js" },
-      { id: 6, language: "Node.js / Express" },
-      { id: 7, language: "MySQL / MongoDB" },
+      { id: 5, language: "React.js" }
     ],
     overview:
       "The Hermon Solutions Admin Panel is developed to give internal teams full control over content, services, and client interactions. It allows for efficient management of company offerings, ensuring the official website remains fresh, professional, and informative.",
