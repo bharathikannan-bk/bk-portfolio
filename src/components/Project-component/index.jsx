@@ -1,4 +1,4 @@
-import Ecommerce from "../../assets/images/projects/e-com.png";
+import Ecommerce from "../../assets/images/projects/Market (1).jpg";
 import Ecommerce1 from "../../assets/images/details/ecom-1.png";
 import Ecommerce2 from "../../assets/images/details/ecom-2.png";
 import Ecommerce3 from "../../assets/images/details/ecom-3.png";
@@ -74,12 +74,13 @@ import Hermon6 from "../../assets/images/details/hs-6.png";
 import Hermon7 from "../../assets/images/details/hs-6.png";
 import Hermon8 from "../../assets/images/details/hs-6.png";
 
+import HermonAdmin from "../../assets/images/projects/hs-mocup.jpg";
 import HermonAdmin1 from "../../assets/images/details/hsadmin-1.png";
 import HermonAdmin2 from "../../assets/images/details/hsadmin-2.png";
 import HermonAdmin3 from "../../assets/images/details/hsadmin-3.png";
 import HermonAdmin4 from "../../assets/images/details/hsadmin-4.png";
 
-import Ruposhi from "../../assets/images/projects/ruposhi.jpg";
+import Ruposhi from "../../assets/images/projects/RG-mocup.jpg";
 import Ruposhi1 from "../../assets/images/details/ruposhi-1.png";
 import Ruposhi2 from "../../assets/images/details/ruposhi-2.png";
 import Ruposhi3 from "../../assets/images/details/ruposhi-3.png";
@@ -87,7 +88,7 @@ import Ruposhi4 from "../../assets/images/details/ruposhi-4.png";
 import Ruposhi5 from "../../assets/images/details/ruposhi-5.png";
 import Ruposhi6 from "../../assets/images/details/ruposhi-6.png";
 
-import Psk from "../../assets/images/details/psk-1.png";
+import Psk from "../../assets/images/projects/shoping.jpg";
 import Psk1 from "../../assets/images/details/psk-1.png";
 import Psk2 from "../../assets/images/details/psk-2.png";
 import Psk3 from "../../assets/images/details/psk-3.png";
@@ -135,7 +136,7 @@ export const portfolioData = [
   },
   {
     id: 11,
-    img: HermonAdmin2,
+    img: HermonAdmin,
     category: "Web Application",
     filter: "filter-development",
     livelink: "https://admin.hermonsolutions.com",

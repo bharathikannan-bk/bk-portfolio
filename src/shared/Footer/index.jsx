@@ -66,6 +66,9 @@ function Footer() {
             <Link to={'https://www.linkedin.com/in/bharathi-kannan-1939632ab'} target="_blank">
               <i class="bi bi-linkedin"></i>
             </Link>
+            <Link to={'https://github.com/bharathikannan-bk'} target="_blank">
+              <i class="bi bi-github"></i>
+            </Link>
           </div>
           <p>© {new Date().getFullYear()}, All Rights Reserved.</p>
         </div>
